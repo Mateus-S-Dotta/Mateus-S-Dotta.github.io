@@ -11,7 +11,7 @@ export const AmountButtuns = styled.div`
         padding: 4px;
     }
     @media screen and (max-width: 375px) {
-        width: 98px;
+        width: 70px;
         height: 35px;
     }
 `;

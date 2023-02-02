@@ -24,6 +24,7 @@ export const Cart = styled.div`
     }
     @media screen and (max-width: 375px) {
         height: 220px;
+        flex-direction: column;
         h5 {
             background-color: #373737;
             border-radius: 5px;
@@ -57,13 +58,13 @@ export const CartFirst = styled.div`
 export const CartSecund = styled.div`
     padding-right: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 190px;
     @media screen and (max-width: 375px) {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         padding-bottom: 22px;
         padding-left: 16px;
     }
@@ -78,7 +79,7 @@ export const CloseButtonCart = styled.div`
     border-radius: 50%;
     cursor: pointer;
     h4 {
-        width: 19px;
+        width: 19px !important;
         text-align: center;
     }
     @media screen and (max-width: 375px) {
